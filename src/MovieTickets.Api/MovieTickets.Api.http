@@ -1,0 +1,40 @@
+@host = http://localhost:5050
+@email = jane.doe@example.com
+
+### List all tickets
+GET {{host}}/api/movietickets
+
+### Get one ticket by customer email
+GET {{host}}/api/movietickets/{{email}}
+
+### Add a ticket
+POST {{host}}/api/movietickets
+Content-Type: application/json
+
+{
+  "customerEmail": "alex.lee@example.com",
+  "customerName": "Alex Lee",
+  "movieTitle": "Space Odyssey Returns",
+  "theaterName": "Downtown Cinema 3",
+  "showTime": "2026-11-05T18:00:00Z",
+  "numberOfTickets": 3,
+  "seatNumbers": ["H1", "H2", "H3"],
+  "ticketPrice": 11.75
+}
+
+### Update a ticket
+PUT {{host}}/api/movietickets/alex.lee@example.com
+Content-Type: application/json
+
+{
+  "customerName": "Alex Lee",
+  "movieTitle": "Space Odyssey Returns",
+  "theaterName": "Downtown Cinema 3",
+  "showTime": "2026-11-06T20:00:00Z",
+  "numberOfTickets": 2,
+  "seatNumbers": ["H1", "H2"],
+  "ticketPrice": 11.75
+}
+
+### Delete a ticket
+DELETE {{host}}/api/movietickets/alex.lee@example.com

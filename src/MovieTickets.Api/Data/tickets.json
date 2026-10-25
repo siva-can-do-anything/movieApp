@@ -1,0 +1,28 @@
+[
+  {
+    "customerEmail": "jane.doe@example.com",
+    "customerName": "Jane Doe",
+    "movieTitle": "The Grand Premiere",
+    "theaterName": "Downtown Cinema 1",
+    "showTime": "2026-11-01T19:30:00+00:00",
+    "numberOfTickets": 2,
+    "seatNumbers": [ "F7", "F8" ],
+    "ticketPrice": 12.50,
+    "totalAmount": 25.00,
+    "createdAtUtc": "2026-10-24T00:00:00+00:00",
+    "updatedAtUtc": "2026-10-24T00:00:00+00:00"
+  },
+  {
+    "customerEmail": "john.smith@example.com",
+    "customerName": "John Smith",
+    "movieTitle": "Midnight Matinee",
+    "theaterName": "Riverside IMAX",
+    "showTime": "2026-11-02T21:00:00+00:00",
+    "numberOfTickets": 1,
+    "seatNumbers": [ "C12" ],
+    "ticketPrice": 18.00,
+    "totalAmount": 18.00,
+    "createdAtUtc": "2026-10-24T00:00:00+00:00",
+    "updatedAtUtc": "2026-10-24T00:00:00+00:00"
+  }
+]

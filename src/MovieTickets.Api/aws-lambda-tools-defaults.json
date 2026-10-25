@@ -1,0 +1,13 @@
+{
+  "Information": [
+    "Settings used by `dotnet lambda deploy-serverless` (Amazon.Lambda.Tools).",
+    "Install the tool with: dotnet tool install -g Amazon.Lambda.Tools"
+  ],
+  "profile": "default",
+  "region": "us-east-1",
+  "configuration": "Release",
+  "framework": "net8.0",
+  "s3-prefix": "movie-tickets-api/",
+  "template": "serverless.template",
+  "stack-name": "movie-tickets-api"
+}
